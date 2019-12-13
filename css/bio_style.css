@@ -1,0 +1,218 @@
+/*apply a natural box layout to all elements
+elements padding won't affect box size
+---------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*---------------------------------*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  margin: 0;
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+}
+
+h1 {
+  font-size: 3.1rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/*Header styling
+_______________________________*/
+header, footer {
+  background-color: #000;
+  color: #fff;
+}
+
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+}
+
+header {
+  color: lightblue;
+}
+
+/*Footer styling
+_________________________________*/
+footer {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content_wrap {
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 20px;
+   overflow: auto;
+}
+
+.instructions {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.instructions ul {
+  padding: 20px;
+}
+.instructions ul li {
+  font-size: 1.48rem;
+  line-height: 1.5;
+  text-align: left;
+  list-style: circle;
+}
+
+
+.domino-summary {
+  text-align: center;
+  padding: 50px;
+}
+.domino-summary p {
+  font-size: 1.48rem;
+}
+
+.contact-info label {
+  color: #fff;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-info {
+  display: block;
+  padding: 20px;
+}
+
+.contact-info input {
+  width: 450px;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+}
+
+.contact-info textarea {
+  width: 450px;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+}
+
+.social-media ul {
+  text-align: center;
+  margin:0;
+  padding:0;
+  /* display:flex; */
+}
+
+.social-media ul li {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 10px;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.social-media ul li a {
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.social-media ul li a .fa {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  padding: 14px;
+}
+
+.social-media ul li:hover, ul li a .fa:hover {
+  border-color: royalblue;
+  color: royalblue;
+}
+
+.col-narrow {
+  width: 30%;
+  min-height: 200px;
+  float: left;
+  padding: 50px 20px;
+}
+
+.col-wide {
+  width: 70%;
+  float: left;
+  padding: 50px 20px;
+}
+
+.education {
+  background-color: #EDF2F4;
+  padding: 20px;
+}
+
+.experience {
+  background-color: darkgray;
+}
+
+@media (max-width: 760px) {
+
+.content_wrap {
+  width: 100%;
+  padding: 30px 10px;
+}
+
+  .col-narrow {
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+  }
+
+  .col-wide {
+    width: 100%;
+    padding: 30px 10px;
+    text-align: left;
+  }
+
+.profile_img {
+  max-height: 300px;
+}
+
+.instructions {
+  padding: 30px 5px;
+}
+}
